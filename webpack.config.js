@@ -22,7 +22,7 @@ module.exports = {
 			}
 		),
 		new HtmlWebpackPlugin({
-			template: "./src/index.html"
+			template: "./src/index.pug"
 	})],
 	module: {
 		rules: [ 
@@ -58,8 +58,13 @@ module.exports = {
 				type: 'asset/resource',
 			},
 			{
-				test: /\.(woff|woff2|eot|ttf|otf)s$/i,
+				test: /\.(woff|woff2|eot|ttf|otf)$/i,
 				type: 'asset/resource',
+			},
+			{
+				test: /\.pug$/,
+				loader: 'pug-loader',
+				exclude: /(node_modules|bower_components)/,
 			},
 		]
 	},
