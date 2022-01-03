@@ -1,2 +1,5 @@
 mixin image(name)
-  img.src(src=`../src/images/${name}.png` alt=name)
+  img(
+    alt=name
+    src=require(`../src/images/${name}.png`)
+  )
