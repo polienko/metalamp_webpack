@@ -12,8 +12,15 @@ console.log(mode + ' mode')
 module.exports = {
 	mode: mode,
 	output: {
+		filename: '[name].[contenthash].js',
 		assetModuleFilename: "assets/[hash][ext][query]",
 		clean: true,
+	},
+	devtool: 'source-map',
+	optimization: {
+		splitChunks: {
+			chunks: 'all',
+		},
 	},
 	plugins: [
 		new MiniCssExtractPlugin(
@@ -21,9 +28,12 @@ module.exports = {
 				filename: '[name].[contenthash].css'
 			}
 		),
-		new HtmlWebpackPlugin({
-			template: "./src/index.pug"
-	})],
+		new HtmlWebpackPlugin(
+			{
+				template: "./src/index.pug"
+			}
+		)
+	],
 	module: {
 		rules: [ 
 			{
@@ -66,6 +76,16 @@ module.exports = {
 				loader: 'pug-loader',
 				exclude: /(node_modules|bower_components)/,
 			},
+			{
+				test: /\.m?js$/,
+				exclude: /node_modules/,
+				use: {
+					loader: 'babel-loader',
+					options: {
+						presets: ['@babel/preset-env']
+					}
+				}
+			}
 		]
 	},
 }
