@@ -3,6 +3,7 @@ $secondaryColor: blue;
 
 html {
 	font-family: generalFont;
+	background-color: #E5E5E5;
 }
 
 h1 {
@@ -13,7 +14,55 @@ h1 {
 	&__subtitle {
 		color: $secondaryColor;
 		display: block;
-		height: 140px;
-		background: url("../images/webpack.png");
+		//height: 140px;
+		//background: url("../images/webpack.png");
 	}
+}
+
+.form-query{
+	font-family: boldFont;
+	background: #FFFFFF;
+	height: 374px;
+	width: 380px;
+	border: 1px solid rgba(0, 0, 0, 0.12);
+	box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+	border-radius: 4px;
+}
+
+.form-query-title{
+	/* Найдём номера под ваши пожелания */
+	margin: 40px 30px 0px 30px;
+
+	position: absolute;
+	width: 320px;
+	height: 59px;
+	//left: 170px;
+	//top: 190px;
+
+	//font-style: normal;
+	//font-weight: bold;
+	font-size: 24px;
+	line-height: 29px;
+
+	color: #1F2041;
+}
+
+.form-query-text-arrival{
+	position: absolute;
+	margin: 120px 0px 0px 30px;
+	font-size: 12px;
+	line-height: 15px;
+
+	text-transform: uppercase;
+	color: #1F2041;
+}
+
+.form-query-text-departure{
+	position: absolute;
+	margin: 120px 97px 0px 200px;
+	font-size: 12px;
+	line-height: 15px;
+
+	text-transform: uppercase;
+	color: #1F2041;
 }

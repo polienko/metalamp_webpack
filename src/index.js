@@ -12,6 +12,6 @@ const user = {
 	...userStack
 }
 
-$('.block').html('jQuery is working');
+//$('.block').html('jQuery is working');
 
 console.log(user)
