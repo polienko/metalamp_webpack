@@ -6,14 +6,13 @@ html(lang='en')
   include pug/_head
   body
     .container
-      h1 LOREM
-      h2.container__subtitle
-        | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, voluptatum?
       //+image('webpack')
-
-      .block
 
       .form-query
         .form-query-title Найдём номера под ваши пожелания
         .form-query-text-arrival прибытие
         .form-query-text-departure выезд
+
+        #form-query-div-arrival.form-query-div
+        #form-query-div-departure.form-query-div
+        span.material-icons-round pie_chart
