@@ -80,6 +80,7 @@ h1 {
 	border: 1px solid rgba(31, 32, 65, 0.25);
 	box-sizing: border-box;
 	border-radius: 4px;
+	display:table; // for verical-align of child span
 }
 
 #form-query-div-arrival{
@@ -90,4 +91,32 @@ h1 {
 #form-query-div-departure{
 	position: absolute;
 	margin: 140.44px 0px 0px 200px;
+}
+
+.expand_more{
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	height: 44px;
+	width: 44px;
+	font-size: 24px;
+	text-align: center;
+	display:table; // for verical-align of child span
+}
+
+span.material-icons-round{
+	display:table-cell;
+	vertical-align:middle;
+}
+
+.text-date-div{
+	display:table-cell;
+	vertical-align:middle;	
+}
+
+.text-date-span{
+	//line-height: 18px; // not working?
+	margin-left: 15px;
+	font-size: 14px;
+	//background:red;
 }
