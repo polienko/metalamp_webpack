@@ -70,9 +70,32 @@ h1 {
 	color: #1F2041;
 }
 
+.form-query-text-guests{
+	position: absolute;
+	margin: 205px 0px 0px 30px;
+	font-size: 12px;
+	line-height: 15px;
+
+	text-transform: uppercase;
+	color: #1F2041;
+}
+
 .form-query-div{
 	background: red;
 	width: 150px;
+	height: 44px;
+
+	background: #FFFFFF;
+
+	border: 1px solid rgba(31, 32, 65, 0.25);
+	box-sizing: border-box;
+	border-radius: 4px;
+	display:table; // for verical-align of child span
+}
+
+.form-query-div-big{
+	background: red;
+	width: 320px;
 	height: 44px;
 
 	background: #FFFFFF;
@@ -91,6 +114,11 @@ h1 {
 #form-query-div-departure{
 	position: absolute;
 	margin: 140.44px 0px 0px 200px;
+}
+
+#form-query-div-guests{
+	position: absolute;
+	margin: 225px 0px 0px 30px;
 }
 
 .expand_more{
@@ -112,6 +140,7 @@ span.material-icons-round{
 .text-date-div{
 	display:table-cell;
 	vertical-align:middle;	
+	font-family: generalFont;
 }
 
 .text-date-span{
@@ -119,4 +148,15 @@ span.material-icons-round{
 	margin-left: 15px;
 	font-size: 14px;
 	//background:red;
+}
+
+#form-query-div-button{
+	height:44px;
+	width:320px;
+
+	position: absolute;
+	margin: 300px 0px 0px 30px;
+
+	background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+	border-radius: 22px;
 }
