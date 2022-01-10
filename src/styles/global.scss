@@ -132,6 +132,18 @@ h1 {
 	display:table; // for verical-align of child span
 }
 
+.arrow_forward{
+	color:white;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	height: 44px;
+	width: 44px;
+	font-size: 24px;
+	text-align: center;
+	display:table; // for verical-align of child span
+}
+
 span.material-icons-round{
 	display:table-cell;
 	vertical-align:middle;
@@ -150,6 +162,15 @@ span.material-icons-round{
 	//background:red;
 }
 
+.text-date-div-white{
+	//line-height: 18px; // not working?
+	margin-left: 18px;
+	font-size: 12px;
+	color:white;
+	width:280px;
+	text-align:center;
+}
+
 #form-query-div-button{
 	height:44px;
 	width:320px;
@@ -159,4 +180,12 @@ span.material-icons-round{
 
 	background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
 	border-radius: 22px;
+
+	display:table;
+}
+
+.text-button-div{
+	display:table-cell;
+	vertical-align:middle;	
+	width:280px;
 }
